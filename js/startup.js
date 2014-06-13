@@ -3,7 +3,6 @@
  */
 
 $(function() {
-	$(document).on("mouseup", getSelectedText);
 	
     $( "#view-tabs" ).tabs({ show: "slide" ,
     	activate: function(event, ui){
