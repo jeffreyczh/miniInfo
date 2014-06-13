@@ -1,0 +1,10 @@
+{
+	"name": "Mini Information Book",
+	"main": "index.html",
+	"window": {
+		"toolbar": false,
+		"title": "Mini Information Book",
+		"min_width": 720,
+		"min_height": 520
+	}
+}

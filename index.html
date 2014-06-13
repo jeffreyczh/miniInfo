@@ -1,0 +1,90 @@
+<html ng-app="miniInfoApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Information Manager</title>
+		<link href="lib/jquery-ui-1.10.4.custom/css/start/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<script type="text/javascript" src="lib/angular.min.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script type="text/javascript" src="js/startup.js"></script>
+		<script type="text/javascript" src="js/nodeStartup.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+	</head>
+	<body ng-controller="miniInfoCtrl">
+		Search: <input ng-model="query">
+		<div id="view-tabs">
+			<ul>
+				<li>
+					<a href="#tab-contact">Contact</a>
+				</li>
+				<li>
+					<a href="#tab-keys">Keys</a>
+				</li>
+			</ul>
+			<div id="tab-contact" >
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Address</th> 
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-mouseover="highlight($event)"  ng-right-click="popupMenu($event)"  ng-repeat="contact in contacts | filter: query">
+					  		<td>{{contact.name}}</td>
+					  		<td>{{contact.addr}}</td> 
+						</tr>
+					</tbody>
+				</table>
+				<form>
+					<fieldset>
+						<legend>New Entry</legend>
+						<input type="text" placeholder="Name" ng-right-click="popupMenu($event)">
+						<input type="text" placeholder="Address" ng-right-click="popupMenu($event)">
+						<button ng-click="add()">Add</button>
+					</fieldset>
+				</form>
+			</div>
+			<div id="tab-keys">
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>User Name</th>
+							<th>Password</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr  ng-mouseover="highlight($event)" ng-right-click="popupMenu($event)"  ng-repeat="key in keys | filter: query">
+							<td>{{key.name}}</td>
+							<td>{{key.userName}}</td>
+							<td>{{key.password}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<form>
+					<fieldset>
+						<legend>New Entry</legend>
+						<input type="text" placeholder="Name" ng-right-click="popupMenu($event)">
+						<input type="text" placeholder="User Name" ng-right-click="popupMenu($event)">
+						<input type="text" placeholder="Password" ng-right-click="popupMenu($event)">
+						<button ng-click="add()">Add</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		
+		<div id="pwdDialog" title="Access">
+			Password: <br>
+			<input type="password">
+			<div class="warning"></div>
+		</div>
+		<div id="firstDialog" title="Create Password">
+			Create Password: <br><input type="password"><br>
+			Confirm Password: <br><input type="password">
+			<div class="warning"></div>
+		</div>
+		<div id="editDialog" title="Edit"></div>
+	</body>
+</html>

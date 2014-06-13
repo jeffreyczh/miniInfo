@@ -1,0 +1,77 @@
+body > input {
+	margin-bottom: 10px;
+}
+
+table {
+	width: 600px;
+	border-collapse: collapse;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-spacing: 0px;
+	border-color: gray;
+}
+
+thead tr {
+	display: block;
+	position: relative;
+}
+
+thead th {
+	width: 200px;
+	background: #C96;
+	color: #ffffff;
+	border-left: 1px solid #EB8;
+	border-right: 1px solid #B74;
+	border-top: 1px solid #EB8;
+	font-weight: normal;
+	padding: 3px;
+	text-align: left;
+}
+
+tbody {
+	width: 650px;
+	height: 262px;
+	overflow-y: auto;
+	display: block;
+	vertical-align: middle;
+}
+
+tbody td {
+	width: 200px;
+	word-break:break-all;
+	background: #FFF;
+	border: 1px solid #CCC;
+	padding: 3px;
+}
+
+#tab-contact th:last-child, #tab-contact td:last-child{
+	width: 400px;
+}
+
+form {
+	padding-top: 20px;
+	font-size: 10pt;
+}
+
+.highlight {
+	background-color: orange;
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+
+#editDialog input {
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.warning {
+	font-size: 12pt;
+	color: red;
+	padding-top: 7px;
+}
