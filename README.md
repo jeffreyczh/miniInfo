@@ -18,7 +18,7 @@ The project is built on the top of [Node-Webkit](https://github.com/rogerwang/no
 
 Firstly, please have [Node.js](http://nodejs.org/) and [Node-Webkit](https://github.com/rogerwang/node-webkit) installed in your machine before continuing the following steps.
 
-###Run the app with Node-Webkitencrytion
+###Run the app with Node-Webkit
 
 1. Zip all the files to a `.nw ` file:   
 Linux:
