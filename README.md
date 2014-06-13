@@ -21,11 +21,26 @@ Firstly, please have [Node.js](http://nodejs.org/) and [Node-Webkit](https://git
 
 ###Run the app with Node-Webkit
 
-1. Zip all the files to a `.nw ` file:
+1. Zip all the files to a `.nw ` file:   
 Linux:
 
-    zip -r miniInfo.nw *
+    `zip -r miniInfo.nw *`
     
 2. Use the **Node-Webkit** to open the generated `miniInfo.nw` file:
 
-    ./nw miniInfo.nw
+    `./nw miniInfo.nw`    
+    
+Note: on Windows, you can drag the `miniInfo.nw` to `nw.exe` to open it.
+
+###Package and distribute the app to an executable file
+
+Linux:
+
+    cat ./nw miniInfo.nw > miniInfo && chmod +x miniInfo
+    
+Then, copy the `nw.pak` file from the **Node-Webkit** prebuild library to the folder where the new `miniInfo` is in.
+
+##About the data
+
+* The `data` file will be created or overwritten when the information is modified (adding, editing or deleting an entry). To import the data, just simply copy this `data` file to the folder where the executable file is in.
+* **Crypto**, which is a module in **Node.js**, is used for encryption and decryption.  **AES-256** is applied for encrypting the data.
