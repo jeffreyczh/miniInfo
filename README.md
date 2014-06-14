@@ -50,6 +50,8 @@ Windows:
     
 Then copy the `nw.pak` and `icudt.dll` from the **Node-Webkit** prebuild library to the folder where the new `miniInfo` is in.
 
+For more information about the app distribution under **Node-Webkit**, please check [How to package and distribute your apps](https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps).
+
 ##About the data
 
 * The `data` file will be created or overwritten when the information is modified (adding, editing or deleting an entry). To import the data, just simply copy this `data` file to the folder where the executable file is in.
