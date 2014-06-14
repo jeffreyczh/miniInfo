@@ -56,9 +56,9 @@ miniInfoApp.controller('miniInfoCtrl', ['$scope', function($scope) {
 		        	} else {
 		        		menu.items[0].enabled = true;
 		        	}
-		        	menu.popup($event.X, $event.Y);
+		        	menu.popup($event.clientX, $event.clientY);
 	        	} else if (tag === "input") {
-	        		menu_input.popup($event.X, $event.Y);
+	        		menu_input.popup($event.clientX, $event.clientY);
 	        	} else {}
 	        };
 	        
