@@ -20,12 +20,14 @@ Firstly, please have [Node.js](http://nodejs.org/) and [Node-Webkit](https://git
 
 ###Run the app with Node-Webkit
 
-1. Zip all the files to a `.nw ` file:   
-Linux:
+1. Zip all the files to a `.nw ` file:
 
-    `zip -r miniInfo.nw *`
+    Linux:
 
-Windows:
+    zip -r miniInfo.nw *
+
+    
+    Windows:
 
     1. Zip all the files to a `.zip` file
     2. Rename the suffix to `.nw`
