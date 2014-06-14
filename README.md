@@ -22,15 +22,14 @@ Firstly, please have [Node.js](http://nodejs.org/) and [Node-Webkit](https://git
 
 1. Zip all the files to a `.nw ` file:
 
-    Linux:
+Linux:
 
     zip -r miniInfo.nw *
 
-    
-    Windows:
+Windows:
 
-    1. Zip all the files to a `.zip` file
-    2. Rename the suffix to `.nw`
+1. Zip all the files to a `.zip` file
+2. Rename the suffix to `.nw`
     
 2. Use the **Node-Webkit** to open the generated `miniInfo.nw` file:
 
