@@ -24,6 +24,11 @@ Firstly, please have [Node.js](http://nodejs.org/) and [Node-Webkit](https://git
 Linux:
 
     `zip -r miniInfo.nw *`
+
+Windows:
+
+    1. Zip all the files to a `.zip` file
+    2. Rename the suffix to `.nw`
     
 2. Use the **Node-Webkit** to open the generated `miniInfo.nw` file:
 
@@ -38,6 +43,12 @@ Linux:
     cat ./nw miniInfo.nw > miniInfo && chmod +x miniInfo
     
 Then, copy the `nw.pak` file from the **Node-Webkit** prebuild library to the folder where the new `miniInfo` is in.
+
+Windows:
+
+    copy /b nw.exe+miniInfo.nw miniInfo.exe
+    
+Then copy the `nw.pak` and `icudt.dll` from the **Node-Webkit** prebuild library to the folder where the new `miniInfo` is in.
 
 ##About the data
 
